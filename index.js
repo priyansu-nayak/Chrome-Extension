@@ -1,4 +1,3 @@
-
 let myLeads = [];
 
 const inputEl = document.getElementById("input-el");
@@ -7,8 +6,8 @@ const ulEl = document.getElementById("ul-el");
 
 inputBtn.addEventListener("click", () => {
   myLeads.push(inputEl.value);
-
   renderLeads();
+  inputEl.value = "";
 });
 
 function renderLeads() {

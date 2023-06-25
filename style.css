@@ -12,7 +12,9 @@ input{
     margin-bottom:4px;
 }
 
-
+li{
+    list-style-type: none;
+}
 button{
  border:none;
  background-color: #5f9341;
