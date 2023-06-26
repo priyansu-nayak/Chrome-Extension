@@ -9,13 +9,10 @@ const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 deleteBtn.addEventListener("dblclick",()=>{
     localStorage.clear()
     myLeads=[]
-    ulEl.innerHTML=""
+    // ulEl.innerHTML=""
+    renderLeads()
         })
-
-
-
-
-
+        
 if(leadsFromLocalStorage){
     myLeads=leadsFromLocalStorage
     renderLeads()
